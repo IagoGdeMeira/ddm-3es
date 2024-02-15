@@ -1,0 +1,10 @@
+Nesta aula, o professor apresentou a seguinte tabela de cargos.
+
+A. Estagiário | Salário: R$400 | Carga-horária: 4~6h
+B. Dev Júnior | Salário: R$1200 | Carga-horária: 8h
+C. Dev | Salário: R$2500 | Carga-horária: 10h
+D. Dev | Salário: R$2500 | Carga-horária: 8h
+E. Dev Pleno | Salário: R$6000 | Carga-horária: 8h
+F. Dev Pleno | Salário: R$6000 | Carga-horária: 8h
+G. Dev Pleno | Salário: R$6000 | Carga-horária: ?h
+
