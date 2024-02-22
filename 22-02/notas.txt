@@ -35,3 +35,20 @@ MINHAS NOTAS:
   algumas semanas, e então seguir para a construção dos diagramas de Classes (DC-UML) e
   Entidade-Relacionamento (DER-UML). Vou deixar o arquivo png do meu DCU-UML na pasta para
   registrar como o projeto está atualmente.
+
+DETALHES SOBRE A MINHA IDEIA INICIAL:
+  Ainda estou na fase de definir funcionalidades, então não posso descrever nenhum requisito
+  ainda. No entanto, é válido determinar algumas funcionalidades que eu já determinei e que
+  constam no DCU-UML deste repositório para esboçar o meu escopo atual.
+
+  > Fazer login.
+  > Cadastrar conta.
+  > Fazer pesquisas de usuários e servidores.
+  > Solicitar entrada em servidor.
+  > Aceitar o convite de um usuário para entrar no servidor.
+  > Criar personagem para RPGs.
+  > Criar um chat para o servidor.
+  > Enviar mensagens como usuário ou como um de seus respectivos personagens.
+  > Listar os personagens que você tem.
+  > Abrir e editar uma ficha de um personagem.
+  > Excluir um personagem.
