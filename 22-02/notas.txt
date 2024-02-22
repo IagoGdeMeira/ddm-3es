@@ -1,0 +1,37 @@
+ANOTAÇÕES DO PROFESSOR:
+  Nosso estudo de caso:
+  - aplicativo para gestão de notas 
+  de alunos;
+  
+  01) - Defina um projeto para você! 
+  (Um para cada aluno)
+      a) Ramos de atividades: Barberaria; 
+  	Salão de Beleza; Marido de Aluguel; 
+  	Compartilhamento de Ferramentas; 
+  	Venda de Lanches; Futebol; 
+  	Basquete; Volei; Gestão de Estudos; Saúde; 
+  
+      b) Escolhendo um ramo defina o escopo. Exemplo: 
+  	Anamnese; Registro de resultado de Exames; Avaliação de Jogadores;
+  	Formação de times/chaves; Agendamento de horário/serviço; Gestão de pedidos;
+  	
+  Diário de aula:
+  - Nome do aplicativo com a devida descrição do escopo; 
+  - Faça o material de estudo da aula (criação projeto, pasta lib, 
+    criação arquivo, método main, execução, variáveis, tipos de dados, 
+    interpolação, boas práticas, variáveis de inferência, 
+    constantes e valor final, entrada de dados, null safery, 
+    conversão de dados, métodos);
+  - Exercícios do caso de uso do Professor;
+  - Exercícios do seu projeto.
+
+MINHAS NOTAS:
+  O professor disse que não é obrigatório usar os exemplos que ele nos deu,
+  portanto eu vou seguir com outra coisa. Eu tenho uma ideia em mente para fazer
+  um aplicativo para gerenciamento de RPGs, que eu gostaria de usar no meu TCC no
+  ano que vem e que eu tenho um esboço de Diagrama de Caso de Uso (DCU-UML) não finalizado pronto.
+  
+  Acredito que eu posso terminar o levantamento de requisitos quase completo em mais
+  algumas semanas, e então seguir para a construção dos diagramas de Classes (DC-UML) e
+  Entidade-Relacionamento (DER-UML). Vou deixar o arquivo png do meu DCU-UML na pasta para
+  registrar como o projeto está atualmente.
