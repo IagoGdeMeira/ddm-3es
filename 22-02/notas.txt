@@ -135,5 +135,18 @@ ATIVIDADES DESCRITIVAS – VAR, CONST E FINAL
     A utilidade de cada uma varia de acordo com a utilidade do dado alocado no projeto.
     
   02) Em relação ao seu projeto, faça 2 exemplos de uso incorreto. Justifique.
+    a-R: Em relação às variáveis, seria incorreto usá-las em datas de registro, como a data de criação de conta ou do primeiro
+         acesso a um servidor específico.
+    b-R: Em relação às constantes, seria incorreto usá-las em dados que eu gostaria de alterar, como nome de usuário, senha,
+         e-mail, etc.
+    c-R: Em relação às finais, seria incorreto usá-las em relações de herança em que as subclasses devessem ser capazes de herdá-las
+         da sua superclasse. No momento, eu não sei de um exemplo prático disso para o meu escopo.
+
   03) Em relação ao seu projeto, faça 2 exemplos de uso correto. Justifique.
-  
+    a-R: Em relação às variáveis, o correto é utilizá-las em dados que eu queira editar eventualmente, como nome de usuário, senha,
+         e-mail, etc.
+    b-R: Em relação às constantes, o correto é utilizá-las em dados que eu só queira usar para leitura, sem editá-los, como datas
+         específicas que sejam interessantes de se registrar.
+    c-R: em relação às finais, o correto é utilizá-las caso eu não queira que um dado de uma superclasse seja herdado por uma
+         subclasse. No momento, não tenho exemplos práticos disso no meu escopo.
+    
