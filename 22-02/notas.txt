@@ -52,3 +52,30 @@ DETALHES SOBRE A MINHA IDEIA INICIAL:
   > Listar os personagens que você tem.
   > Abrir e editar uma ficha de um personagem.
   > Excluir um personagem.
+
+INTRODUÇÃO AO DART – INFORMAÇÕES INTERESSANTES:
+  > Variável e atributo não são necessariamente a mesma coisa.
+    VARIÁVEL: Não necessariamente pertence a uma classe ou entidade.
+    ATRIBUTO: Pertence a uma classe ou entidade. Pode ser variável ou constante.
+
+  > Relembrar a diferença entre variável de valor e de referência.
+    VALOR: contém um valor de qualquer tipo que está armazenado na memória.
+    REFERÊNCIA: contém um endereço de memória que aponta para um valor armazenado.
+  
+  > Interpolação em Dart:
+    EX: print("Esta é a $variavel1 e aquela é a ${variavel2}")
+
+  > Operação lógica encurtada em Dart:
+    EX: idadeAluno >= 18 ? "O aluno é maior de idade" : "O aluno é menor de idade"
+
+ATIVIDADE 01:
+  a) Defina as seguintes variáveis e seus respectivos valores: displina, carga horária
+      com casas decimais, professor responsável, se a disciplina está ativa e
+      quantidade de alunos.
+  b) Imprima todos os valores utilizando:
+    i) concatenação, 
+    ii) interpolação simples e
+    iii) a interpolação com processamento
+
+ATIVIDADE 02
+   Aplique o que aprendeu no seu projeto.
