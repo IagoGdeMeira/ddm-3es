@@ -16,7 +16,7 @@ void main(List<String> arguments) {
       '\nQuantidade de alunos: ' +
       qntdAlunos.toString());
 
-  print('''
+  print('''\n
 Disciplina: $disciplina
 Carga Horária: $cargaHoraria
 Professor Responsável: $professorResponsavel
