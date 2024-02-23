@@ -1,4 +1,4 @@
-ORÇAMENTO: DEV
+ORÇAMENTO: PLENO
 
 ANOTAÇÕES DO PROFESSOR:
   Nosso estudo de caso:
@@ -128,6 +128,12 @@ ATIVIDADES DESCRITIVAS – DYNAMIC
          Sistema de String = 'administrador'  |  Sistema de int = 0
 
 ATIVIDADES DESCRITIVAS – VAR, CONST E FINAL
-  01) Em relação ao seu projeto, faça 2 exemplos de uso incorreto. Justifique.
-  02) Em relação ao seu projeto, faça 2 exemplos de uso correto. Justifique.
-  03) Qual a diferença entre uma variável, const e final. Qual devemos utilizar?
+  01) Qual a diferença entre uma variável, const e final. Qual devemos utilizar?
+    VAR: Uma alocação de dados na memória que pode ser lida e alterada.
+    CONST: Uma alocação de dados na memória que pode apenas ser lida. Definida em tempo de compilação.
+    FINAL: Uma alocação de dados na memória que pode apenas ser lida. Definida em tempo de execução.
+    A utilidade de cada uma varia de acordo com a utilidade do dado alocado no projeto.
+    
+  02) Em relação ao seu projeto, faça 2 exemplos de uso incorreto. Justifique.
+  03) Em relação ao seu projeto, faça 2 exemplos de uso correto. Justifique.
+  
