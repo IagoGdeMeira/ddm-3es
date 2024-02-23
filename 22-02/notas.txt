@@ -68,6 +68,14 @@ INTRODUÇÃO AO DART – INFORMAÇÕES INTERESSANTES:
   > Operação lógica encurtada em Dart:
     EX: idadeAluno >= 18 ? "O aluno é maior de idade" : "O aluno é menor de idade"
 
+  > Recomendação para declarar variável em Dart:
+    Recomenda-se utilizar a palavra "var" e declarar o valor da variável por inferência.
+    EX: var qntdAlunos = 30;
+
+  > Diferença entre "const" e "final":
+    CONST: Uma alocação de dados na memória que é imutável e definida em tempo de compilação, antes da execução.
+    FINAL: Uma alocação de dados na memória que é imutável e definida em tempo de execução.
+
 ATIVIDADE 01:
   a) Defina as seguintes variáveis e seus respectivos valores: displina, carga horária
       com casas decimais, professor responsável, se a disciplina está ativa e
@@ -79,3 +87,18 @@ ATIVIDADE 01:
 
 ATIVIDADE 02
    Aplique o que aprendeu no seu projeto.
+
+ATIVIDADE 03
+  a) Refaça "Atividade 01" utilizando Inferência de Tipo.
+
+ATIVIDADE 04
+  Aplique o que aprendeu no seu projeto.
+
+ATIVIDADES DESCRITIVAS
+  01) Considerando o exemplo, em qual contexto utilizamos uma variável dynamica?
+  02) Em relação ao seu projeto, faça 2 exemplos de uso incorreto. Justifique.
+  03) Em relação ao seu projeto, faça 2 exemplos de uso correto. Justifique.
+  
+  01) Em relação ao seu projeto, faça 2 exemplos de uso incorreto. Justifique.
+  02) Em relação ao seu projeto, faça 2 exemplos de uso correto. Justifique.
+  03) Qual a diferença entre uma variável, const e final. Qual devemos utilizar?
