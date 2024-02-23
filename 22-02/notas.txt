@@ -1,3 +1,5 @@
+ORÇAMENTO: DEV
+
 ANOTAÇÕES DO PROFESSOR:
   Nosso estudo de caso:
   - aplicativo para gestão de notas 
@@ -76,6 +78,12 @@ INTRODUÇÃO AO DART – INFORMAÇÕES INTERESSANTES:
     CONST: Uma alocação de dados na memória que é imutável e definida em tempo de compilação, antes da execução.
     FINAL: Uma alocação de dados na memória que é imutável e definida em tempo de execução.
 
+  > Variáveis dinâmicas:
+    São variáveis cujos tipos podem ser alterados. Vale lembrar que Dart é uma linguagem de tipagem forte, ou
+    seja, suas variáveis não podem trocar seus tipos de dados normalmente, a menos que elas sejam declaradas
+    com a palavra "dynamic" na frente.
+    EX: dynamic idAluno = 4500;
+
 ATIVIDADE 01:
   a) Defina as seguintes variáveis e seus respectivos valores: displina, carga horária
       com casas decimais, professor responsável, se a disciplina está ativa e
@@ -94,11 +102,32 @@ ATIVIDADE 03
 ATIVIDADE 04
   Aplique o que aprendeu no seu projeto.
 
-ATIVIDADES DESCRITIVAS
+ATIVIDADES DESCRITIVAS – DYNAMIC
   01) Considerando o exemplo, em qual contexto utilizamos uma variável dynamica?
+    R: Nós usamos variáveis dinâmicas em contextos em que o tipo da variável pode não ser o mesmo, geralmente por
+        diferenças entre softwares e as tipagens utilizadas em suas respectivas variáveis.
+
   02) Em relação ao seu projeto, faça 2 exemplos de uso incorreto. Justifique.
+    a-R: Eu poderia usar dynamic no id de um usuário e então usá-lo para escrever tipos que não fazem sentido, como
+      o booleano.
+    EX:    dynamic idUsuario = 10203451;
+           idUsuario = false;
+
+    b-R: Eu poderia usar dynamic para uma alocação de memória que eu quero que seja constante.
+    EX:    dynamic dataCriacaoDaConta = '20/02/2024';
+           dataCriacaoDaConta = '22/02/2024';
+
   03) Em relação ao seu projeto, faça 2 exemplos de uso correto. Justifique.
-  
+    a-R: Eu poderia usar o dynamic em variáveis de datas caso sistemas do projeto precisem disso para se comunicar adequadamente.
+         Datas não são tipos primitivos de linguagens de programação.
+
+    b-R: Eu poderia usar o dynamic em variáveis que determinem o cargo do usuário em um servidor, caso
+         sistemas do mesmo projeto não usem os mesmos tipos para fazer essa definição.
+    EX:  Sistema de String = 'comum'  |  Sistema de int = 2
+         Sistema de String = 'moderador'  |  Sistema de int = 1
+         Sistema de String = 'administrador'  |  Sistema de int = 0
+
+ATIVIDADES DESCRITIVAS – VAR, CONST E FINAL
   01) Em relação ao seu projeto, faça 2 exemplos de uso incorreto. Justifique.
   02) Em relação ao seu projeto, faça 2 exemplos de uso correto. Justifique.
   03) Qual a diferença entre uma variável, const e final. Qual devemos utilizar?
