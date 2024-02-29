@@ -1,1 +1,36 @@
+ORÇAMENTO:
 
+COMANDOS FUNDAMENTAIS NO PROJETO FLUTTER (no VSCode):
+    >| Exibição dos tipos de projeto que se pode criar com as extensões instaladas:
+        L-Ctrl + L-Shift + P
+
+    >| Obtenção das bibliotecas no projeto Flutter:
+        (No cmd) flutter pub get
+
+    >| Limpeza das bibliotecas no projeto Flutter:
+        (No cmd) flutter pub
+
+CONVERSÃO DE TIPO DE VARIÁVEL:
+    É possível fazer uma conversão de tipo em Dart. Eis um exemplo feito em aula:
+
+    var entradaIdade = stdin.readLineSync()!;
+    var idade = int.parse(entradaIdade);
+
+    var entradaIdade = stdin.readLineSync()!;
+    var idade = entradaIdade as int;
+
+NULL SAFETY:
+    É importante fazer o tratamento de valores nulos para garantir a plena execução
+    do código, e fazer esse tratamento cedo é mais importante ainda, pois conforme o
+    programa crescer, haverão muitas classes para verificar, com cada classe tendo
+    muito conteúdo para revisar e então identificar o problema.
+
+    Para evitar valores nulos, é preciso definir regras de segurança (null safety)
+    para garantir que o programa trate valores nulos em tempo de compilação.
+    
+    Sinais de tratamento de dados:
+        >| ! – Definindo que não haverá um valor nulo.
+            EX: var entradaIdade = stdin.readLineSync()!
+            
+        >| ? – Definindo que pode haver um valor nulo a tratar.
+            EX: String? nome = stdin.readLineSync();
