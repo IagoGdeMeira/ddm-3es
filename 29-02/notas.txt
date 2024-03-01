@@ -30,7 +30,14 @@ NULL SAFETY:
     
     Sinais de tratamento de dados:
         >| ! – Definindo que não haverá um valor nulo.
-            EX: var entradaIdade = stdin.readLineSync()!
+            EX: var entradaIdade = stdin.readLineSync()!;
             
         >| ? – Definindo que pode haver um valor nulo a tratar.
             EX: String? nome = stdin.readLineSync();
+
+               Também pode ser usado para impedir execução de parte de uma linha caso
+               detecte um nulo.
+            EX: String? nome = stdin.readLineSync()?.upperCase();
+        
+        >| ?? – Definindo um tratamento caso o valor seja nulo.
+            EX: var entradaNota = stdin.readLineSync() ?? '-1.0'
