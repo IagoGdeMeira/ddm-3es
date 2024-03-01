@@ -1,4 +1,4 @@
-ORÇAMENTO:
+ORÇAMENTO: Pleno
 
 COMANDOS FUNDAMENTAIS NO PROJETO FLUTTER (no VSCode):
     >| Exibição dos tipos de projeto que se pode criar com as extensões instaladas:
