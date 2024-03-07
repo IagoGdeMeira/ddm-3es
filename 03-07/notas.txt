@@ -1,0 +1,26 @@
+ORÇAMENTO: 
+
+ANOTAÇÕES INTERESSANTES:
+    > Diferença entre MÉTODOS e FUNÇÕES
+        |> MÉTODO: Está presente em uma classe
+        |> FUNÇÃO: Não está presente em uma classe
+
+    > Parâmetros opcionais: Você pode definir que uma função ou método terá parâmetros opcionais.
+        |> EX: Personagem(int idJogador, String nomeCompleto, [int id = 0])
+               // Neste exemplo, o "id" terá um valor padrão = 0 caso o id não seja informado.
+        |> EX: Personagem(int idJogador, String nomeCompleto, [int? id])
+               // Neste exemplo, o "id" não tem valor padrão, mas poderá ser nulo.
+
+    > Parâmetros nomeados: Você pode definir nomes para os parâmetros e, então, declará-los na ordem que quiser.
+        |> EX: void mostrarAniversario({String nome='Suposto Aniversariante', String data}) { }
+               void main() {
+                    mostrarAniversario(data: '07-03-2024', nome: 'Aniversariante');
+               }
+
+        Apesar disso, é possível informar que um parâmetro nomeado é obrigatório usando a palavra "required".
+        |> Ex: bool ehAprovado(required double nota1,
+                               required double nota2,
+                               required int faltas,
+                               double mediaAprovacao = 6,
+                               int faltasMaxima = 10) { }
+
