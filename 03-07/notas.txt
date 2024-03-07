@@ -1,5 +1,37 @@
 ORÇAMENTO: 
 
+ATIVIDADES:
+Atividade 01 - Parâmetros Posicionais
+- Escreve 3 exemplos do seu projeto contendo todo conteúdo passado;
+
+Atividade 02 - Parâmetros Opcionais
+- Escreve 3 exemplos do seu projeto contendo todo conteúdo passado;
+
+Atividade 03 - Parâmetros Nomeados
+- Escreve 3 exemplos do seu projeto contendo todo conteúdo passado;
+
+Atividade 04 - Parâmetros do Tipo Função
+- Escreve 3 exemplos do seu projeto contendo todo conteúdo passado;
+	
+Atividade 05 - Funções Anônimas
+- Escreve 3 exemplos do seu projeto contendo todo conteúdo passado;
+
+Atividade 06 
+Escreva diversos exemplos de funções (sem contexto) nomeadas que possua parâmetro do tipo função e faça a chamada utilizado funções anônimas que possua diversas linhas de código (o quanto for necessário).
+Escreva 3 exemplos do seu projeto de funções nomeadas que possua parâmetro do tipo função e faça a chamada utilizado funções anônimas que possua diversas linhas de código (o quanto for necessário).
+Escreva um exemplo contextualizado 
+- do uso correto de um parâmetro do tipo nulo.
+- de uma única função que possua parâmetros nomeados e poscionais. 
+- de uma única função que possua parâmetros posicionais com e sem valor padrão. 
+- de uma única função que possua parâmetros nomeados com e sem valor padrão. 
+
+Atividade complementar
+- Qual a diferença (sintaxe e semântica) entre um parâmetro do tipo nulo e um parâmetro opcional? Explique.
+- O que é parâmetro posicional? Quais vantagens e desvantagens? Cite as principais regras.
+- O que é parâmetro posicional com valor padrão? Quais vantagens e desvantagens? Cite as principais regras.
+- O que é parâmetro nomeado? Quais vantagens e desvantagens? Cite as principais regras.
+- Por padrão o parâmetro é obrigatório ou opcional? Justifique.
+
 ANOTAÇÕES INTERESSANTES:
     > Diferença entre MÉTODOS e FUNÇÕES
         |> MÉTODO: Está presente em uma classe
