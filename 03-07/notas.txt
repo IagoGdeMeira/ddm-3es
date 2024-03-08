@@ -37,7 +37,8 @@ ANOTAÇÕES INTERESSANTES:
         |> MÉTODO: Está presente em uma classe
         |> FUNÇÃO: Não está presente em uma classe
 
-    > Parâmetros opcionais: Você pode definir que uma função ou método terá parâmetros opcionais.
+    > Parâmetros posicionais opcionais: Você pode definir que uma função ou método terá parâmetros opcionais sem
+        alterar a posição.
         |> EX: Personagem(int idJogador, String nomeCompleto, [int id = 0])
                // Neste exemplo, o "id" terá um valor padrão = 0 caso o id não seja informado.
         |> EX: Personagem(int idJogador, String nomeCompleto, [int? id])

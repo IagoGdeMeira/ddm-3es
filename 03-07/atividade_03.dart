@@ -4,10 +4,10 @@ class Personagem {
   var usuarioId = 0;
   var nomeCompleto = '';
 
-  Personagem(
-    int id,
-    int usuarioId,
-    [String nomeCompleto = 'NOME_DO_PERSONAGEM']) {
+  Personagem({
+      required id,
+      required int usuarioId,
+      required String nomeCompleto}) {
     this.id = id;
     this.usuarioId = usuarioId;
     this.nomeCompleto = nomeCompleto;
@@ -21,12 +21,11 @@ class Usuario {
   var fotoPerfil = '';
   var fotoCapa = '';
 
-  Usuario(
-    int id,
-    String nomePerfil,
-    [String fotoPerfil = 'img/fotos-de-perfil/minha-foto-de-perfil.jpg',
-    String fotoCapa = 'img/fotos-de-capa/minha-foto-de-capa.jpg']) {
-
+  Usuario({
+      required int id,
+      required String nomePerfil,
+      String fotoPerfil = 'img/fotos-de-perfil/minha-foto-de-perfil.jpg',
+      String fotoCapa = 'img/fotos-de-capa/minha-foto-de-capa.jpg'}) {
     this.id = id;
     this.nomePerfil = nomePerfil;
     this.fotoPerfil = fotoPerfil;
@@ -41,12 +40,11 @@ class Chat {
   var permiteUsuario = true;
   var permitePersonagem = true;
 
-  Chat(
-    int id,
-    String titulo,
-    [bool permiteUsuario = true,
-    bool permitePersonagem = true]) {
-
+  Chat({
+      required int id,
+      required String titulo,
+      bool permiteUsuario = true,
+      bool permitePersonagem = true}) {
     this.id = id;
     this.titulo = titulo;
     this.permiteUsuario = permiteUsuario;
