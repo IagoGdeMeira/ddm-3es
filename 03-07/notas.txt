@@ -56,4 +56,6 @@ ANOTAÇÕES INTERESSANTES:
                                required int faltas,
                                double mediaAprovacao = 6,
                                int faltasMaxima = 10) { }
-
+    
+    > Parâmetros Function: o tipo Function permite que usemos funções como parâmetros.
+        |> EX: double ehAprovado(double nota1, double nota2, Function(double, double) calcularMediaPercentual) { }
