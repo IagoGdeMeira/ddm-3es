@@ -1,4 +1,4 @@
-ORÇAMENTO: 
+ORÇAMENTO: Dev
 
 ATIVIDADES:
 Atividade 01 - Parâmetros Posicionais
@@ -57,5 +57,8 @@ ANOTAÇÕES INTERESSANTES:
                                double mediaAprovacao = 6,
                                int faltasMaxima = 10) { }
     
-    > Parâmetros Function: o tipo Function permite que usemos funções como parâmetros.
+    > Parâmetros Function: O tipo Function permite que usemos funções como parâmetros.
         |> EX: double ehAprovado(double nota1, double nota2, Function(double, double) calcularMediaPercentual) { }
+
+    > Funções Anônimas: São funções que não possuem nome, mas que podem ser utilizadas em momentos pontuais para executar
+        uma determinada função.

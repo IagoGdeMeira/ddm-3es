@@ -11,3 +11,5 @@ AVISO: Por uma questão de organização cronológica, mudei o formato das datas
 > [P] 02-22 | 2ª semana. Definindo um projeto pessoal para desenvolver pelo ano todo e seu escopo.
 
 > [P] 02-29 | 3ª semana. Aprendendo sobre funções, aplicação indivisível das Regras de Negócio e Null Safety no Dart.
+
+> [D] 03-07 | 4ª semana. Aprendendo sobre parâmetros de funções.
