@@ -13,3 +13,5 @@ AVISO: Por uma questão de organização cronológica, mudei o formato das datas
 > [P] 02-29 | 3ª semana. Aprendendo sobre funções, aplicação indivisível das Regras de Negócio e Null Safety no Dart.
 
 > [D] 03-07 | 4ª semana. Aprendendo sobre parâmetros de funções. Ainda preciso revisar funções anônimas melhor.
+
+> [ ] 03-14 | 5ª semana. Aprendendo sobre classes. Ingressando em POO no Dart.

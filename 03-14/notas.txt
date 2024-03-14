@@ -1,0 +1,25 @@
+ORÇAMENTO: 
+
+ANOTAÇÕES:
+    Hoje vamos começamos a nos aprofundar nos conceitos de POO aplicados em Dart.
+    Sintaticamente falando, não parece haver muita diferenças no básico de escrita de classes e de herança.
+    
+    DECLARAÇÕES DE OBJETOS (ambas funcionam, mas a 2ª é a mais indicada no Dart):
+        >| Classe objeto = new Classe();
+        >| var objeto = Classe();
+
+    IMPORTAÇÕES (o 1º exemplo pode falhar mais):
+        >| import 'caminho/da/importacao-relativa.dart';
+        >| import 'package:caminho/da/importacao-completa.dart';
+
+    Dart, assim como Java, usa a palavra reservada "this" para se referir aos atributos da classe.
+    Além disso, é possível fazer o "set" diretamente na área dos parâmetros.
+        >|  Classe(int x, int y) {
+                this.x = x;
+                this.y = y;
+                print('Objeto instanciado com sucesso!');
+            }
+
+            Classe({required this.x, required this.y}) {
+                print('Objeto instanciado com sucesso!');
+            }
