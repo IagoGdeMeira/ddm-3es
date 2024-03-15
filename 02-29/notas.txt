@@ -39,7 +39,7 @@ NULL SAFETY:
                detecte um nulo.
             EX: String? nome = stdin.readLineSync()?.upperCase();
         
-        >| ?? – Definindo um tratamento caso o valor seja nulo.
+        >| ?? – Definindo um tratamento imediato caso o valor seja nulo.
             EX: var entradaNota = stdin.readLineSync() ?? '-1.0'
 
 ATIVIDADES:
