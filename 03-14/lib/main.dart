@@ -14,14 +14,4 @@ var cidade_001 = Cidade(id: 1,
   estado: estado_001
 );
 
-var venda_001 = Venda(
-  id: 1,
-  cliente: Cliente(
-    id: 1,
-    nome: 'Rogério',
-    trabalho: , moradia: moradia),
-  fornecedor: fornecedor,
-  calcularComissao: calcularComissao
-);
-
 void main(List<String> args) {}

@@ -14,4 +14,4 @@ AVISO: Por uma questão de organização cronológica, mudei o formato das datas
 
 > [D] 03-07 | 4ª semana. Aprendendo sobre parâmetros de funções. Ainda preciso revisar funções anônimas melhor.
 
-> [ ] 03-14 | 5ª semana. Aprendendo sobre classes. Ingressando em POO no Dart.
+> [P] 03-14 | 5ª semana. Aprendendo sobre classes. Ingressando em POO no Dart.
