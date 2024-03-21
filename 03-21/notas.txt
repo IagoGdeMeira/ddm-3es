@@ -1,0 +1,27 @@
+ORÇAMENTO:
+
+ANOTÇAÕES:
+    Dica Útil: Acessar atributos de uma classe com mais facilidade:
+    EX: var data = Data();
+
+        data
+        ..dia = 21
+        ..mes = 3
+        ..ano = 2024;
+
+    Conteúdo:   Hoje estamos começando o conteúdo de Flutter propriamente dito. Pelas minhas pesquisas, o Flutter
+                permite que cuidemos tanto da parte de programação quanto da parte visual; isso porque ele conta com
+                o uso das WIDGETS.
+
+            WIDGET: Uma classe que atua como elemento gráfico no site. Apesar de ter uma sintaxe própria, a definição
+                    de estilo das Widgets, ao me ver, se assemelha ao que fazemos no CSS. Até que eu encontre um caso
+                    no qual isso se prove incorreto, vou adotar esse modo de pensar.
+
+                    Apesar de nem toda classe ser uma Widget, toda Widget é uma classe, e as classes que são Widgets
+                    devem definir isso com uma relação de HERANÇA.
+
+                    No Flutter, as Widgets possuem dois tipos de ESTADO:
+                        >|  ESTÁTICO (StatelessWidget): Não sofrem alterações em seu componente visual
+                        >|  DINÂMICO (StatefulWidget): Podem sofrer alterações em seu componente visual
+
+                    
