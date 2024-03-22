@@ -15,3 +15,5 @@ AVISO: Por uma questão de organização cronológica, mudei o formato das datas
 > [D] 03-07 | 4ª semana. Aprendendo sobre parâmetros de funções. Ainda preciso revisar funções anônimas melhor.
 
 > [P] 03-14 | 5ª semana. Aprendendo sobre classes. Ingressando em POO no Dart.
+
+> [D] 03-21 | 6ª semana. Utilizando o Flutter. Aprendendo sobre Widgets e criação de telas para Android.

@@ -1,6 +1,6 @@
-ORÇAMENTO:
+ORÇAMENTO: D
 
-ANOTÇAÕES:
+ANOTAÇAÕES:
     Dica Útil: Acessar atributos de uma classe com mais facilidade:
     EX: var data = Data();
 
@@ -9,7 +9,7 @@ ANOTÇAÕES:
         ..mes = 3
         ..ano = 2024;
 
-    Conteúdo:   Hoje estamos começando o conteúdo de Flutter propriamente dito. Pelas minhas pesquisas, o Flutter
+    CONTEÚDO:   Hoje estamos começando o conteúdo de Flutter propriamente dito. Pelas minhas pesquisas, o Flutter
                 permite que cuidemos tanto da parte de programação quanto da parte visual; isso porque ele conta com
                 o uso das WIDGETS.
 
@@ -18,10 +18,14 @@ ANOTÇAÕES:
                     no qual isso se prove incorreto, vou adotar esse modo de pensar.
 
                     Apesar de nem toda classe ser uma Widget, toda Widget é uma classe, e as classes que são Widgets
-                    devem definir isso com uma relação de HERANÇA.
+                    devem definir isso com uma relação de HERANÇA. Lembrar de usar os Widgets de Material, que são 
+                    voltados para o desenvolvimento Android especificamente.
 
                     No Flutter, as Widgets possuem dois tipos de ESTADO:
                         >|  ESTÁTICO (StatelessWidget): Não sofrem alterações em seu componente visual
                         >|  DINÂMICO (StatefulWidget): Podem sofrer alterações em seu componente visual
 
-                    
+    AVISO:  >| A partir de hoje, o projeto Flutter estará presente no repositório pela pasta "text_e_role".
+            >| O nome provisório do projeto é: Text&Role.
+            >| É aconselhável não editar os arquivos que estejam fora da pasta "lib"
+
