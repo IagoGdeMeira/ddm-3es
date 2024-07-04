@@ -1,0 +1,20 @@
+ORÇAMENTO:
+
+OBSERVAÇÕES:  Após a 6ª semana, houve uma greve dos professores que se prolongou por alguns meses.
+              Nesse período, não fiz progresso significativo no meu projeto Flutter. Agora, é preciso
+              revisar os meus objetivos.
+
+CONSIDERAÇÕES:  Analisando o progresso do meu DCU-UML, eu acredito que ele está se tornando muito complexo.
+                Mesmo que eu consiga projetá-lo, desenvolvê-lo vai levar muito tempo. Por isso, decidi
+                reformular os casos de uso para focar em determinados pontos do desenvolvimento na seguinte
+                ordem de prioridade:
+
+                1. Definir a estrutura de dados dos servidores de RPG e os seus relacionamentos com usuários.
+                2. Definir configurações e permissões dos servidores estabelecidas pelos seus respectivos ad-
+                   ministradores.
+                3. Construir protótipos de interfaces que comportem ao menos as estruturas estabelecidas no
+                   item 1.
+
+                O DCU-UML deve estar terminado, nas minhas próprias estimativas, em 3 semanas. A partir daí,
+                o DCU-UML será usado de base para fazer a estrutura de dados do meu projeto.
+                
