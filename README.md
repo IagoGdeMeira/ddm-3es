@@ -17,3 +17,7 @@ AVISO: Por uma questão de organização cronológica, mudei o formato das datas
 > [P] 03-14 | 5ª semana. Aprendendo sobre classes. Ingressando em POO no Dart.
 
 > [D] 03-21 | 6ª semana. Utilizando o Flutter. Aprendendo sobre Widgets e criação de telas para Android.
+
+[ GREVE DOS PROFESSORES. ]
+
+> [ ] 07-04 | 7ª semana. Revisando os objetivos da disciplina e meus diagramas.
