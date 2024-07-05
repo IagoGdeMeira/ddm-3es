@@ -1,4 +1,4 @@
-ORÇAMENTO:
+ORÇAMENTO: D
 
 OBSERVAÇÕES:  Após a 6ª semana, houve uma greve dos professores que se prolongou por alguns meses.
               Nesse período, não fiz progresso significativo no meu projeto Flutter. Agora, é preciso
