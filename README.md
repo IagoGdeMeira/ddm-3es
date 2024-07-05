@@ -20,4 +20,4 @@ AVISO: Por uma questão de organização cronológica, mudei o formato das datas
 
 [ GREVE DOS PROFESSORES. ]
 
-> [ ] 07-04 | 7ª semana. Revisando os objetivos da disciplina e meus diagramas.
+> [D] 07-04 | 7ª semana. Revisando os objetivos da disciplina e meus diagramas.
