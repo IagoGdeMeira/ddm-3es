@@ -24,4 +24,6 @@ AVISO: Por uma questão de organização cronológica, mudei o formato das datas
 
 > [D] 07-11, 07-18 | 8ª e 9ª semanas. Continuando com a documentação e pesquisando sobre arquiteturas de software orientadas a domínios.
 
-> [] 07-25 | 10ª semana. Terminando a pesquisa para a apresentação e para o documento de requisitos.
+> [D] 07-25 | 10ª semana. Terminando a pesquisa para a apresentação e para o documento de requisitos.
+
+> [E] 08-01 | 11ª semana. Documento de requisitos ainda incompleto. Pesquisa exploratória completa. Por ora, preciso focar na elicitação de requisitos e de testes.
