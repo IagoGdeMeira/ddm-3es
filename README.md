@@ -1,5 +1,7 @@
 # Meu repositório de Desenvolvimento para Dispositivos Móveis (DDM)
 
+DIÁRIO: https://docs.google.com/spreadsheets/d/1ZszFZx3z9FCj0NkWx_9US0kgOXNVW6I2OnyaXiBknzM/edit?usp=drivesdk
+
 Neste repositório, estarei fazendo os uploads dos arquivos da disciplina de DDM.
 O repositório estará divido em pastas nomeadas pelas datas nas quais suas respectivas atividades foram propostas
 e essas atividades serão descritas neste documento.
