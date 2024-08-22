@@ -29,3 +29,9 @@ AVISO: Por uma questão de organização cronológica, mudei o formato das datas
 > [J] 07-25 | 10ª semana. Terminando a pesquisa para a apresentação e para o documento de requisitos.
 
 > [E] 08-01 | 11ª semana. Documento de requisitos ainda incompleto. Pesquisa exploratória completa. Por ora, preciso focar na elicitação de requisitos e de testes.
+
+> [] 08-08 |12ª semana. Recuperação trimestral.
+
+> [D] 08-15 | 13ª semana. Aplicando orientação a domínio com um projeto de gestão de notas, nos focando em histórias de usuário da classe CPF.
+
+> [] 08-22 | 14ª semana.
