@@ -2,12 +2,15 @@ class CPF {
   late List<int> cpfNumbers;
 
   CPF(String cpf) {
-    if (cpf == '') throw Exception('ERRO: O valor do CPF não pode ser vazio.');
+    isEmpty(cpf);
 
     cpf = cpf.replaceAll('.', '');
     cpf = cpf.replaceAll('-', '');
-
     cpfNumbers = cpf.split('').map((int.parse)).toList();
+    
+    hasElevenNumbers();
+    hasDifferentNumbers();
+    hasCorrectDigits();
   }
 
   bool hasElevenNumbers() {
@@ -36,7 +39,7 @@ class CPF {
       throw Exception('O primeiro dígito verificador é inválido.');
     if (calculateDigits(9) != cpfNumbers[10])
       throw Exception('O segundo dígito verificador é inválido.');
-    
+
     return true;
   }
 
@@ -53,5 +56,10 @@ class CPF {
 
   bool isUnique() {
     return true;
+  }
+
+  isEmpty(String cpf) {
+    if (cpf.isEmpty)
+      throw Exception('ERRO: O valor do CPF não pode ser vazio.');
   }
 }

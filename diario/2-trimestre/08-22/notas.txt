@@ -1,0 +1,7 @@
+ORÇAMENTO: []
+
+Curiosidades:
+    1. getters em Dart:
+        String get status => _status; // declaração do getter da variável status.
+        statusProfessor = professor.status // chamada do getter status.
+    
