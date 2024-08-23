@@ -1,7 +1,22 @@
 ORÇAMENTO: []
 
 Curiosidades:
-    1. getters em Dart:
+    1. Getters em Dart:
         String get status => _status; // declaração do getter da variável status.
         statusProfessor = professor.status // chamada do getter status.
     
+    2. Setters em Dart:
+        set status(String status) { // corpo semelhante a Java.
+            if (status != 'A' || status != 'I') {
+                throw Exception('Status não pode ser diferente de "A" ou "I".');
+            }
+        }
+
+        professor.status('A');
+
+    3. Inversão de dependências:
+        Criação de Objetos de Transferência de Dados (DTOs) para garantir que as regras do domínio
+        sejam priorizadas sobre as dependências.
+
+
+Começando a implementar as regras de negócio no meu projeto Text&Role.

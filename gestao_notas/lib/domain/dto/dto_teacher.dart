@@ -1,11 +1,11 @@
-class DTOProfessor {
+class DTOTeacher {
   late dynamic id;
   late String name;
   late String? description;
   late String cpf;
   late String status = 'A';
 
-  DTOProfessor({
+  DTOTeacher({
     this.id,
     required this.name,
     this.description,
