@@ -30,8 +30,10 @@ AVISO: Por uma questão de organização cronológica, mudei o formato das datas
 
 > [E] 08-01 | 11ª semana. Documento de requisitos ainda incompleto. Pesquisa exploratória completa. Por ora, preciso focar na elicitação de requisitos e de testes.
 
-> [] 08-08 |12ª semana. Recuperação trimestral.
+> [] 08-08 | 12ª semana. Recuperação trimestral.
 
 > [D] 08-15 | 13ª semana. Aplicando orientação a domínio com um projeto de gestão de notas, nos focando em histórias de usuário da classe CPF.
 
-> [] 08-22 | 14ª semana.
+> [D] 08-22 | 14ª semana. Implementando mais partes do estudo de caso da disciplina e desenvolvendo um pouco do meu próprio projeto.
+
+> [J] 08-29 | 15ª semana. Seguindo com o desenvolvimento do meu projeto com classes e testes unitários. Ajustando o projeto no GitHub atrelado ao repositório remoto.

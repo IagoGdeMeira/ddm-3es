@@ -1,6 +1,6 @@
 import 'package:gestao_notas/domain/dto/dto_teacher.dart';
 import 'package:gestao_notas/domain/cpf.dart';
-import 'package:gestao_notas/domain/interface/i_dao_professor.dart';
+import 'package:gestao_notas/domain/interface/i_dao_teacher.dart';
 
 class Teacher {
   late dynamic id;
