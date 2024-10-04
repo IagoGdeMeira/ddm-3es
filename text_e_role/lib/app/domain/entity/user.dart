@@ -1,5 +1,5 @@
-import 'package:text_e_role/domain/dto/dto_user.dart';
-import 'package:text_e_role/domain/interface/idao_user.dart';
+import 'package:text_e_role/app/domain/dto/dto_user.dart';
+import 'package:text_e_role/app/domain/interface/idao_user.dart';
 
 
 class User {
@@ -49,7 +49,7 @@ class User {
 
   bool isEmailValid(String email) {
     final emailFormat =
-        RegExp(r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$");
+      RegExp(r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$");
     if (!emailFormat.hasMatch(email)) throw Exception('Invalid e-mail format.');
 
     return true;
@@ -57,9 +57,8 @@ class User {
 
   bool isPasswordValid(String password) {
     final passwordFormat =
-        RegExp(r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$');
-    if (!passwordFormat.hasMatch(password))
-      throw Exception('ERROR: Invalid password format.');
+      RegExp(r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$');
+    if (!passwordFormat.hasMatch(password)) throw Exception('Invalid password format.');
 
     return true;
   }

@@ -1,4 +1,4 @@
-import 'package:text_e_role/domain/dto/dto_user.dart';
+import 'package:text_e_role/app/domain/dto/dto_user.dart';
 
 abstract class IDAOUser {
   Future<DTOUser> save(DTOUser dto);
