@@ -1,13 +1,21 @@
 class DTOUser {
-  late dynamic id;
-  late String email;
-  late String password;
-  late String username;
+  dynamic id;
+  final String username;
+  final String email;
+  final String password;
+  final String status;
+  final String? displayName;
+  final String? avatarURL;
+  final String? biography;
 
   DTOUser({
     this.id,
+    required this.username,
     required this.email,
     required this.password,
-    required this.username
+    this.status = 'A',
+    this.displayName,
+    this.avatarURL,
+    this.biography    
   });
 }
