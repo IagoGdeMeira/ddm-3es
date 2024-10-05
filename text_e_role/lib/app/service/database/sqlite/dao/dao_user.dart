@@ -1,7 +1,8 @@
 import 'package:sqflite/sqflite.dart';
-import 'package:text_e_role/app/domain/interface/idao_user.dart';
+import 'package:text_e_role/app/domain/interface/i_dao_user.dart';
 import 'package:text_e_role/app/domain/dto/dto_user.dart';
 import 'package:text_e_role/app/service/database/sqlite/connection.dart';
+
 
 class DAOUser implements IDAOUser {
   late Database _db;

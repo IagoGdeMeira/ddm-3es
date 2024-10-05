@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:text_e_role/app/domain/entity/user.dart';
-import 'package:text_e_role/app/domain/interface/idao_user.dart';
+import 'package:text_e_role/app/domain/interface/i_dao_user.dart';
 import 'package:text_e_role/app/domain/vo/password.dart';
 import 'package:text_e_role/app/service/database/sqlite/dao/dao_user.dart';
 
