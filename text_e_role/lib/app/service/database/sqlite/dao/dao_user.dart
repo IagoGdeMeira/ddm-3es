@@ -7,7 +7,7 @@ class DAOUser implements IDAOUser {
   late Database _db;
 
   final insertSQL = '''
-    INSERT VALUES INTO user(
+    INSERT INTO user(
       username,
       email,
       password,

@@ -12,6 +12,7 @@ class Connection {
 
     _db = await openDatabase(path, version: 1, onCreate: (db, version) {
       createTables.forEach(db.execute);
+      insertTest.forEach(db.execute);
     }, singleInstance: true);
     
     return _db;

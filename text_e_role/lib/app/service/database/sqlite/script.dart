@@ -12,3 +12,32 @@ const createTables = [
     )
   '''
 ];
+
+const insertTest = [
+  '''
+    INSERT INTO user(
+      username,
+      email,
+      password,
+      status
+    ) VALUES (
+      'usertest',
+      'example@domain.com',
+      'ValidP@ssw0rd',
+      'A'
+    );
+  ''',
+  '''
+    INSERT INTO user(
+      username,
+      email,
+      password,
+      status
+    ) VALUES (
+      'testuser',
+      'new-example@domain.com',
+      'ValidP@ssw0rd',
+      'A'
+    );
+  '''
+];
