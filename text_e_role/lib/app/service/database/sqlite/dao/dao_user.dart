@@ -58,20 +58,49 @@ class DAOUser implements IDAOUser {
   }
 
   @override
-  Future<List<DTOUser>> searchAll() {
-    // TODO: implement searchAll
-    throw UnimplementedError();
+  Future<List<DTOUser>> searchAll() async {
+    _db = await Connection.init();
+
+    var listedUsers = await _db.rawQuery(selectSQL);
+
+    return List.generate(listedUsers.length, (i) {
+      var user = listedUsers[i];
+
+      return DTOUser(
+        id: user['id'], 
+        username: user['username'].toString(), 
+        email: user['email'].toString(), 
+        password: user['password'].toString(), 
+        status: user['status'].toString(), 
+        displayName: user['display_name'].toString(),
+        avatarURL: user['avatar_URL'].toString(),
+        biography: user['biography'].toString()
+      );
+    });
   }
 
   @override
-  Future<DTOUser> searchById(int id) {
-    // TODO: implement searchById
-    throw UnimplementedError();
-  }
+  Future<DTOUser> searchById(int id) async {
+    _db = await Connection.init();
 
+    var user = (await _db.rawQuery(selectByIdSQL,[id])).first;
+    
+    return DTOUser(
+      id: user['id'], 
+      username: user['username'].toString(), 
+      email: user['email'].toString(), 
+      password: user['password'].toString(), 
+      status: user['status'].toString(), 
+      displayName: user['display_name'].toString(),
+      avatarURL: user['avatar_URL'].toString(),
+      biography: user['biography'].toString()
+    );
+  }
+  
   @override
   Future<DTOUser> update(DTOUser dto) async {
     _db = await Connection.init();
+
     await _db.rawUpdate(alterSQL, [
       dto.username,
       dto.email,
@@ -89,6 +118,7 @@ class DAOUser implements IDAOUser {
   @override
   Future<bool> updateStatus(int id) async {
     _db = await Connection.init();
+
     await _db.rawUpdate(deleteSQL, [id]);
 
     return true;
