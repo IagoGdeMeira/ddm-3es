@@ -1,5 +1,6 @@
 import 'package:text_e_role/app/domain/dto/dto_user.dart';
 import 'package:text_e_role/app/domain/interface/idao_user.dart';
+import 'package:text_e_role/app/domain/vo/password.dart' as password_validator;
 
 
 class User {
@@ -48,17 +49,8 @@ class User {
   }
 
   bool isEmailValid(String email) {
-    final emailFormat =
-      RegExp(r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$");
+    final emailFormat = RegExp(r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$");
     if (!emailFormat.hasMatch(email)) throw Exception('Invalid e-mail format.');
-
-    return true;
-  }
-
-  bool isPasswordValid(String password) {
-    final passwordFormat =
-      RegExp(r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$');
-    if (!passwordFormat.hasMatch(password)) throw Exception('Invalid password format.');
 
     return true;
   }
@@ -96,7 +88,7 @@ class User {
   set password(String? password) {
     if (password == null) throw Exception('Password cannot be null.');
     if (password.isEmpty) throw Exception('Password cannot be empty.');
-    isPasswordValid(password);
+    password_validator.Password(password).validatePassword();
 
     _password = password;
   }
