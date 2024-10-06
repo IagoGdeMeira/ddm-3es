@@ -14,7 +14,7 @@ class DAOUser implements IDAOUser {
       password,
       status,
       display_name,
-      avatar_URL,
+      avatar_url,
       biography
     ) VALUES (?, ?, ?, ?, ?, ?, ?);
   ''';
@@ -26,7 +26,7 @@ class DAOUser implements IDAOUser {
       password = ?,
       status = ?,
       display_name = ?,
-      avatar_URL = ?,
+      avatar_url = ?,
       biography = ?
     WHERE id = ?;
   ''';
@@ -74,7 +74,7 @@ class DAOUser implements IDAOUser {
         password: user['password'].toString(), 
         status: user['status'].toString(), 
         displayName: user['display_name'].toString(),
-        avatarURL: user['avatar_URL'].toString(),
+        avatarURL: user['avatar_url'].toString(),
         biography: user['biography'].toString()
       );
     });
@@ -93,7 +93,7 @@ class DAOUser implements IDAOUser {
       password: user['password'].toString(), 
       status: user['status'].toString(), 
       displayName: user['display_name'].toString(),
-      avatarURL: user['avatar_URL'].toString(),
+      avatarURL: user['avatar_url'].toString(),
       biography: user['biography'].toString()
     );
   }

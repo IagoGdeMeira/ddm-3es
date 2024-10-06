@@ -17,40 +17,6 @@ class UserList extends StatelessWidget {
     return avatar;
   }
 
-  Widget iconEditButton(VoidCallback onPressed) {
-    return IconButton(
-      icon: const Icon(Icons.edit),
-      color: const Color.fromARGB(255, 0, 10, 145),
-      onPressed: onPressed
-    );
-  }
-
-  Widget iconRemoveButton(BuildContext context, VoidCallback remove) {
-    return IconButton(
-      icon: const Icon(Icons.delete), 
-      color: Colors.red, 
-      onPressed: () {
-        showDialog(
-          context: context, 
-          builder:  (context) => AlertDialog(
-            title: const Text('Delete'),
-            content: const Text('Do you wish to delete this user?'),
-            actions: [
-              TextButton(
-                child: const Text('NO'), 
-                onPressed: () => Navigator.of(context).pop(),
-              ),
-              TextButton(
-                onPressed: remove,
-                child: const Text('YES'),
-              ),
-            ],
-          )
-        );
-      }
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     var userApplication = UserApplication();
@@ -62,9 +28,8 @@ class UserList extends StatelessWidget {
         actions: [
           IconButton(
             icon: const Icon(Icons.add),
-            onPressed: () {
-              //_back.goToForm(context);
-            })
+            onPressed: () {}
+          )
         ],
       ),
         body: FutureBuilder(
@@ -104,5 +69,39 @@ class UserList extends StatelessWidget {
               );
             }
     }));
+  }
+
+  Widget iconEditButton(VoidCallback onPressed) {
+    return IconButton(
+      icon: const Icon(Icons.edit),
+      color: const Color.fromARGB(255, 3, 5, 27),
+      onPressed: onPressed
+    );
+  }
+
+  Widget iconRemoveButton(BuildContext context, VoidCallback remove) {
+    return IconButton(
+      icon: const Icon(Icons.delete), 
+      color: const Color.fromARGB(255, 190, 3, 3), 
+      onPressed: () {
+        showDialog(
+          context: context, 
+          builder:  (context) => AlertDialog(
+            title: const Text('Delete'),
+            content: const Text('Do you wish to delete this user?'),
+            actions: [
+              TextButton(
+                child: const Text('NO'), 
+                onPressed: () => Navigator.of(context).pop(),
+              ),
+              TextButton(
+                onPressed: remove,
+                child: const Text('YES'),
+              ),
+            ],
+          )
+        );
+      }
+    );
   }
 }

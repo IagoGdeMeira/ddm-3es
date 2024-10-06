@@ -1,22 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:text_e_role/app/widget/user_list.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
+import 'package:text_e_role/app/my_app.dart';
 
 
-void main() {
-  runApp(const MyApp());
-}
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Supabase.initialize(
+    url: 'https://iajzxrbibiinpobeyugd.supabase.co',
+    anonKey:
+      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZ'
+      'iI6Imlhanp4cmJpYmlpbnBvYmV5dWdkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mjg'
+      'xNjcxOTIsImV4cCI6MjA0Mzc0MzE5Mn0.cclttmqGzqZECRPeZfzNaEVvkWLnQsPDbhTeJytpvAY'
+  );
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const UserList(),
-    );
-  }
+  runApp(MyApp());
 }
