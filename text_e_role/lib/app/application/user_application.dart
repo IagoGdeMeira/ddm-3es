@@ -1,11 +1,11 @@
 import 'package:text_e_role/app/service/database/sqlite/dao/dao_user.dart';
-import 'package:text_e_role/app/domain/dto/dto_user.dart';
-import 'package:text_e_role/app/domain/interface/i_dao_user.dart';
+import 'package:text_e_role/app/domain/dto/user_dto.dart';
+import 'package:text_e_role/app/domain/interface/user_idao.dart';
 import 'package:text_e_role/app/domain/entity/user.dart';
 
 
 class UserApplication{
-  late IDAOUser dao;
+  late UserIDAO dao;
   late User domain;
 
   UserApplication() {
@@ -13,11 +13,11 @@ class UserApplication{
     domain = User(userDAO: dao);
   }
     
-  Future<DTOUser> save(DTOUser dto) async {
+  Future<UserDTO> save(UserDTO dto) async {
     return await domain.save(dto);
   }
 
-  Future<DTOUser> update(dynamic id) async {
+  Future<UserDTO> update(dynamic id) async {
     return await domain.update(id);
   }
 
@@ -26,7 +26,7 @@ class UserApplication{
     return true;
   }
 
-  Future<List<DTOUser>> search() async {
+  Future<List<UserDTO>> search() async {
     return await domain.searchAll();
   }
 }

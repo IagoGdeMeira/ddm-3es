@@ -1,4 +1,4 @@
-class DTOUser {
+class UserDTO {
   dynamic id;
   final String username;
   final String email;
@@ -8,7 +8,7 @@ class DTOUser {
   final String? avatarURL;
   final String? biography;
 
-  DTOUser({
+  UserDTO({
     this.id,
     required this.username,
     required this.email,

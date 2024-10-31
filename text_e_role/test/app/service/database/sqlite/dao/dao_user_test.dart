@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-import 'package:text_e_role/app/domain/dto/dto_user.dart';
+import 'package:text_e_role/app/domain/dto/user_dto.dart';
 import 'package:text_e_role/app/service/database/sqlite/connection.dart';
 import 'package:text_e_role/app/service/database/sqlite/dao/dao_user.dart';
 
@@ -77,7 +77,7 @@ main() async{
 
     group('DTO usage |', () {
       test('Testing insertion with DTO.', () async {
-        DTOUser dto = await dao.save(DTOUser(
+        UserDTO dto = await dao.save(UserDTO(
           username: 'testuser',
           email: 'example@domain.com',
           password: 'ValidP@ssw0rd',
@@ -91,7 +91,7 @@ main() async{
       }); 
       
       test('Testing alteration with DTO', () async {
-        await dao.save(DTOUser(
+        await dao.save(UserDTO(
           username: 'testuser',
           email: 'example@domain.com',
           password: 'ValidP@ssw0rd',
@@ -101,7 +101,7 @@ main() async{
           biography: null
         ));
 
-        var dto = await dao.update(DTOUser(
+        var dto = await dao.update(UserDTO(
           username: 'newTestUSEEEER',
           email: 'example@domain.com',
           password: 'ValidP@ssw0rd',
@@ -115,7 +115,7 @@ main() async{
       });
 
       test('Testing status alteration with DTO.', () async {
-        var dto = await dao.save(DTOUser(
+        var dto = await dao.save(UserDTO(
           username: 'newTestUSEEEER',
           email: 'example@domain.com',
           password: 'ValidP@ssw0rd',
@@ -130,7 +130,7 @@ main() async{
       });
 
       test('Testing selection by ID with DTO.', () async {
-        var dto = await dao.save(DTOUser(
+        var dto = await dao.save(UserDTO(
           username: 'newTestUSEEEER',
           email: 'example@domain.com',
           password: 'ValidP@ssw0rd',
@@ -145,7 +145,7 @@ main() async{
       });
 
       test('Testing selection with DTO.', () async {
-        await dao.save(DTOUser(
+        await dao.save(UserDTO(
           username: 'newTestUSEEEER',
           email: 'example@domain.com',
           password: 'ValidP@ssw0rd',

@@ -1,6 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:text_e_role/app/domain/entity/user.dart';
-import 'package:text_e_role/app/domain/interface/i_dao_user.dart';
 import 'package:text_e_role/app/domain/vo/password.dart';
 import 'package:text_e_role/app/service/database/sqlite/dao/dao_user.dart';
 
@@ -48,8 +47,7 @@ void main() {
 
   group('User', () {
     group('FR003 - The system must validate the password submitted for an account.', () {
-      IDAOUser dao = DAOUser();
-      final domain = User(userDAO: dao);
+      final domain = User(userDAO: DAOUser());
 
       test('Setting the password after proper validation.', () {
         expect(() => domain.password = 'Valid@Password123', returnsNormally);

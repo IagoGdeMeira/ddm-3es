@@ -1,10 +1,10 @@
 import 'package:sqflite/sqflite.dart';
-import 'package:text_e_role/app/domain/interface/i_dao_user.dart';
-import 'package:text_e_role/app/domain/dto/dto_user.dart';
+import 'package:text_e_role/app/domain/interface/user_idao.dart';
+import 'package:text_e_role/app/domain/dto/user_dto.dart';
 import 'package:text_e_role/app/service/database/sqlite/connection.dart';
 
 
-class DAOUser implements IDAOUser {
+class DAOUser implements UserIDAO {
   late Database _db;
 
   final insertSQL = '''
@@ -41,7 +41,7 @@ class DAOUser implements IDAOUser {
   final selectSQL = 'SELECT * FROM user;';
 
   @override
-  Future<DTOUser> save(DTOUser dto) async {
+  Future<UserDTO> save(UserDTO dto) async {
     _db = await Connection.init();
 
     int id = await _db.rawInsert(insertSQL, [
@@ -59,7 +59,7 @@ class DAOUser implements IDAOUser {
   }
 
   @override
-  Future<List<DTOUser>> searchAll() async {
+  Future<List<UserDTO>> searchAll() async {
     _db = await Connection.init();
 
     var listedUsers = await _db.rawQuery(selectSQL);
@@ -67,7 +67,7 @@ class DAOUser implements IDAOUser {
     return List.generate(listedUsers.length, (i) {
       var user = listedUsers[i];
 
-      return DTOUser(
+      return UserDTO(
         id: user['id'], 
         username: user['username'].toString(), 
         email: user['email'].toString(), 
@@ -81,12 +81,12 @@ class DAOUser implements IDAOUser {
   }
 
   @override
-  Future<DTOUser> searchById(int id) async {
+  Future<UserDTO> searchById(int id) async {
     _db = await Connection.init();
 
     var user = (await _db.rawQuery(selectByIdSQL,[id])).first;
     
-    return DTOUser(
+    return UserDTO(
       id: user['id'], 
       username: user['username'].toString(), 
       email: user['email'].toString(), 
@@ -99,7 +99,7 @@ class DAOUser implements IDAOUser {
   }
   
   @override
-  Future<DTOUser> update(DTOUser dto) async {
+  Future<UserDTO> update(UserDTO dto) async {
     _db = await Connection.init();
 
     await _db.rawUpdate(alterSQL, [

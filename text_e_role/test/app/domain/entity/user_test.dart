@@ -1,13 +1,13 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:text_e_role/app/domain/entity/user.dart';
-import 'package:text_e_role/app/domain/interface/i_dao_user.dart';
+import 'package:text_e_role/app/domain/interface/user_idao.dart';
 import 'package:text_e_role/app/service/database/sqlite/dao/dao_user.dart';
 
 
 void main() {
   group('User', () {
     group('FR002 - The system must validate the e-mail addresses submitted for the account.', () {
-      IDAOUser dao = DAOUser();
+      UserIDAO dao = DAOUser();
       final domain = User(userDAO: dao);
 
       test('Valid e-mail address.', () {

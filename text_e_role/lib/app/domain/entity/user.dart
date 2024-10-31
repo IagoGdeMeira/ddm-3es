@@ -1,5 +1,5 @@
-import 'package:text_e_role/app/domain/dto/dto_user.dart';
-import 'package:text_e_role/app/domain/interface/i_dao_user.dart';
+import 'package:text_e_role/app/domain/dto/user_dto.dart';
+import 'package:text_e_role/app/domain/interface/user_idao.dart';
 import 'package:text_e_role/app/domain/vo/password.dart' as password_validator;
 
 
@@ -13,11 +13,11 @@ class User {
   String? _avatarURL;
   String? _biography;
 
-  IDAOUser userDAO;
+  UserIDAO userDAO;
 
   User({required this.userDAO});
 
-  validateUser({required DTOUser dto}) {
+  validateUser({required UserDTO dto}) {
     username = dto.username;
     email = dto.email;
     password = dto.password;
@@ -27,12 +27,12 @@ class User {
     biography = dto.biography;
   }
 
-  Future<DTOUser> save(DTOUser dto) async {
+  Future<UserDTO> save(UserDTO dto) async {
     validateUser(dto: dto);
     return await userDAO.save(dto);
   }
 
-  Future<DTOUser> update(dynamic id) async {
+  Future<UserDTO> update(dynamic id) async {
     this.id = id;
     return await userDAO.update(_id);
   }
@@ -44,7 +44,7 @@ class User {
     return true;
   }
 
-  Future<List<DTOUser>> searchAll() async {
+  Future<List<UserDTO>> searchAll() async {
     return await userDAO.searchAll();
   }
 

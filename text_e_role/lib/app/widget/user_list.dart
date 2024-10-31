@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:text_e_role/app/application/user_application.dart';
-import 'package:text_e_role/app/domain/dto/dto_user.dart';
+import 'package:text_e_role/app/domain/dto/user_dto.dart';
 
 
 class UserList extends StatelessWidget {
@@ -34,11 +34,11 @@ class UserList extends StatelessWidget {
       ),
         body: FutureBuilder(
           future: userList,
-          builder: (BuildContext context, AsyncSnapshot<List<DTOUser>> futureUserList) {
+          builder: (BuildContext context, AsyncSnapshot<List<UserDTO>> futureUserList) {
             if (!futureUserList.hasData || futureUserList.data == null) {
               return const CircularProgressIndicator();
             } else {
-              List<DTOUser> userList = futureUserList.data!;
+              List<UserDTO> userList = futureUserList.data!;
 
               return ListView.builder(
                 itemCount: userList.length,
