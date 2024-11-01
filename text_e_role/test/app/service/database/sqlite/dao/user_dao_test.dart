@@ -2,17 +2,17 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 import 'package:text_e_role/app/domain/dto/user_dto.dart';
 import 'package:text_e_role/app/service/database/sqlite/connection.dart';
-import 'package:text_e_role/app/service/database/sqlite/dao/dao_user.dart';
+import 'package:text_e_role/app/service/database/sqlite/dao/user_dao.dart';
 
 
 main() async{
   late Database db;
-  late DAOUser dao;
+  late UserDAO dao;
 
   setUpAll((){
     sqfliteFfiInit();
     databaseFactory = databaseFactoryFfi;
-    dao = DAOUser();
+    dao = UserDAO();
   });
 
   setUp(() async {

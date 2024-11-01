@@ -1,4 +1,4 @@
-import 'package:text_e_role/app/service/database/sqlite/dao/dao_user.dart';
+import 'package:text_e_role/app/service/database/sqlite/dao/user_dao.dart';
 import 'package:text_e_role/app/domain/dto/user_dto.dart';
 import 'package:text_e_role/app/domain/interface/user_idao.dart';
 import 'package:text_e_role/app/domain/entity/user.dart';
@@ -9,7 +9,7 @@ class UserApplication{
   late User domain;
 
   UserApplication() {
-    dao = DAOUser();
+    dao = UserDAO();
     domain = User(userDAO: dao);
   }
     

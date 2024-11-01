@@ -4,7 +4,7 @@ import 'package:text_e_role/app/domain/dto/user_dto.dart';
 import 'package:text_e_role/app/service/database/sqlite/connection.dart';
 
 
-class DAOUser implements UserIDAO {
+class UserDAO implements UserIDAO {
   late Database _db;
 
   final insertSQL = '''
