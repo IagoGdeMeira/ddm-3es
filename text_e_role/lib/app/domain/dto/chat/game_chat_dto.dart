@@ -1,29 +1,19 @@
-import 'package:text_e_role/app/domain/entity/message.dart';
-import 'package:text_e_role/app/domain/entity/user.dart';
+import 'package:text_e_role/app/domain/dto/chat/general_chat_dto.dart';
 
 
-class GameChatDTO {
-  dynamic id;
-  final String name;
-  final String? description;
-  final String status;
-  final List<User> users;
-  final List<Message> messages;
-  final List<dynamic> moderatorIDs;
-  final User creator;
-  final DateTime creationDate;
+class GameChatDTO extends GeneralChatDTO {
   final List<dynamic> gameMasterIDs;
 
   GameChatDTO({
-    this.id,
-    required this.name,
-    this.description,
-    this.status = 'A',
-    required this.users,
-    this.messages = const [],
-    required this.moderatorIDs,
-    required this.creator,
-    required this.creationDate,
+    super.id,
+    required super.name,
+    super.description,
+    super.status = 'A',
+    required super.users,
+    super.messages = const [],
+    required super.moderatorIDs,
+    required super.creator,
+    required super.creationDate,
     required this.gameMasterIDs
   });
 }
