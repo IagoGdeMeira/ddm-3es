@@ -24,5 +24,45 @@ void main() {
         expect(() => domain.email = 'example', throwsException);
       });
     });
+
+    group('Username', () {
+      final domain = User(userDAO: UserDAO());
+
+      group('Username', () {
+        test('Valid username.', () {
+          expect(() => domain.username = 'Username', returnsNormally);
+        });
+
+        test('Usernames cannot be null.', () {
+          expect(() => domain.username = null, throwsException);
+        });
+
+        test('Usernames addresses cannot be empty.', () {
+          expect(() => domain.username = '', throwsException);
+        });
+
+        test('Invalid username.', () {
+          expect(() => domain.username = 'User@name~', throwsException);
+        });
+      });
+
+      group('Display Name', () {
+        test('Valid display name.', () {
+          expect(() => domain.displayName = 'DisplayName', returnsNormally);
+        });
+
+        test('Display names cannot be null.', () {
+          expect(() => domain.displayName = null, throwsException);
+        });
+
+        test('Display names can be empty.', () {
+          expect(() => domain.displayName = '', returnsNormally);
+        });
+
+        test('Invalid display name.', () {
+          expect(() => domain.displayName = 'User@name~', throwsException);
+        });
+      });
+    });
   });
 }

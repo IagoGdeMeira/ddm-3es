@@ -56,10 +56,10 @@ class User {
   }
 
   bool _isUsernameValid(String username) {
-    const allowedSpecialChars = r'!@#$%^&*()_+{}|:"<>?';
+    const allowedSpecialChars = r'!@#\$%\^&\*\(\)_\+\{\}\|:\?\-\.';
     final invalidUsernameFormat = RegExp(r'[^a-zA-Z0-9' + allowedSpecialChars + r']');
 
-    if(invalidUsernameFormat.hasMatch(username)) throw Exception('The submitted username has invalid special characters.');
+    if (invalidUsernameFormat.hasMatch(username)) throw Exception('O nome de usuário contém caracteres especiais inválidos.');
 
     return true;
   }
