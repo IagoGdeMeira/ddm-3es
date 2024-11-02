@@ -48,9 +48,18 @@ class User {
     return await userDAO.searchAll();
   }
 
-  bool isEmailValid(String email) {
+  bool _isEmailValid(String email) {
     final emailFormat = RegExp(r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$");
     if (!emailFormat.hasMatch(email)) throw Exception('Invalid e-mail format.');
+
+    return true;
+  }
+
+  bool _isUsernameValid(String username) {
+    const allowedSpecialChars = r'!@#$%^&*()_+{}|:"<>?';
+    final invalidUsernameFormat = RegExp(r'[^a-zA-Z0-9' + allowedSpecialChars + r']');
+
+    if(invalidUsernameFormat.hasMatch(username)) throw Exception('The submitted username has invalid special characters.');
 
     return true;
   }
@@ -73,6 +82,7 @@ class User {
   set username(String? username) {
     if (username == null) throw Exception('Username cannot be null.');
     if (username.isEmpty) throw Exception('Username cannot be empty.');
+    _isUsernameValid(username);
 
     _username = username;
   }
@@ -80,14 +90,12 @@ class User {
   set email(String? email) {
     if (email == null) throw Exception('E-mail address cannot be null.');
     if (email.isEmpty) throw Exception('E-mail address cannot be empty.');
-    isEmailValid(email);
+    _isEmailValid(email);
 
     _email = email;
   }
 
   set password(String? password) {
-    if (password == null) throw Exception('Password cannot be null.');
-    if (password.isEmpty) throw Exception('Password cannot be empty.');
     password_validator.Password(password).validatePassword();
 
     _password = password;
@@ -102,6 +110,7 @@ class User {
 
   set displayName(String? displayName) {
     if (displayName == null) throw Exception('Display name cannot be null.');
+    _isUsernameValid(displayName);
 
     _displayName = displayName;
   }
