@@ -4,15 +4,15 @@ import 'package:text_e_role/app/widget/user_list.dart';
 
 
 class Routes {
-  static const String HOME = '/';
-  static const String USER_FORM = '/user-form';
-  static const String USER_LIST = '/user-list';
+  static const String home = '/';
+  static const String userForm = '/user-form';
+  static const String userList = '/user-list';
 
   static Map<String, WidgetBuilder> getRoutes() {
     return {
-      HOME: (context) => const UserList(),
-      USER_FORM: (context) => const UserForm(),
-      USER_LIST: (context) => const UserList()
+      home: (context) => const UserList(),
+      userForm: (context) => const UserForm(),
+      userList: (context) => const UserList()
     };
   }
 }

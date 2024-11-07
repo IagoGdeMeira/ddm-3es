@@ -24,14 +24,14 @@ class Password{
 
   bool isPasswordTooShort() {
     int minLimit = 8;
-    if(passwordToValidate.length < minLimit) throw Exception('The password must have at least ${minLimit} characters.');
+    if(passwordToValidate.length < minLimit) throw Exception('The password must have at least $minLimit characters.');
     
     return false;
   }
 
   bool isPasswordTooLong() {
     int maxLimit = 30;
-    if(passwordToValidate.length > maxLimit) throw Exception('The password must not have more than ${maxLimit} characters.');
+    if(passwordToValidate.length > maxLimit) throw Exception('The password must not have more than $maxLimit characters.');
 
     return false;
   }

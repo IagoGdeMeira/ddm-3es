@@ -13,5 +13,5 @@ void main() async {
       'xNjcxOTIsImV4cCI6MjA0Mzc0MzE5Mn0.cclttmqGzqZECRPeZfzNaEVvkWLnQsPDbhTeJytpvAY'
   );
 
-  runApp(MyApp());
+  runApp(const MyApp());
 }

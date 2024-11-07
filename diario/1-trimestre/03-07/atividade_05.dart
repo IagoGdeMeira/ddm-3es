@@ -12,10 +12,6 @@ class Personagem {
   setNomeCompleto(String nomeCompleto, Function(String) validarNomeCompleto) {
     if (validarNomeCompleto(nomeCompleto)) this.nomeCompleto = nomeCompleto;
   }
-
-  bool _validarNomeCompleto(String nome) {
-    return (nome.length <= 60);
-  }
 }
 
 //EX 02:
@@ -37,10 +33,6 @@ class Usuario {
   setNomePerfil(String nomePerfil, Function(String) validarNomePerfil) {
     if (validarNomePerfil(nomePerfil)) this.nomePerfil = nomePerfil;
   }
-
-  bool _validarNomePerfil(String nome) {
-    return (nome.length <= 40);
-  }
 }
 
 //EX 03:
@@ -59,9 +51,5 @@ class Chat {
 
   setTitulo(String titulo, Function(String) validarTitulo) {
     if (validarTitulo(titulo)) this.titulo = titulo;
-  }
-
-  bool _validarTitulo(String nome) {
-    return (nome.length <= 30);
   }
 }

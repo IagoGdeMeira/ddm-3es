@@ -1,7 +1,5 @@
 import 'Cidade.dart';
-import 'Cliente.dart';
 import 'Estado.dart';
-import 'Venda.dart';
 
 var estado_001 = Estado(
   id: 1,
