@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:text_e_role/app/widget/user_form.dart';
-import 'package:text_e_role/app/widget/user_list.dart';
+import 'package:text_e_role/app/presentation/widget/user_form.dart';
+import 'package:text_e_role/app/presentation/widget/user_list.dart';
 
 
 class Routes {

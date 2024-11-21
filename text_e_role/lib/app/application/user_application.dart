@@ -1,6 +1,6 @@
 import 'package:text_e_role/app/service/database/sqlite/dao/user_dao.dart';
 import 'package:text_e_role/app/domain/dto/user_dto.dart';
-import 'package:text_e_role/app/domain/interface/user_idao.dart';
+import 'package:text_e_role/app/domain/idao/user_idao.dart';
 import 'package:text_e_role/app/domain/entity/user.dart';
 
 

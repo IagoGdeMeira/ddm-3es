@@ -1,5 +1,5 @@
 import 'package:text_e_role/app/domain/dto/user_dto.dart';
-import 'package:text_e_role/app/domain/interface/user_idao.dart';
+import 'package:text_e_role/app/domain/idao/user_idao.dart';
 import 'package:text_e_role/app/domain/vo/password.dart' as password_validator;
 
 
@@ -64,6 +64,7 @@ class User {
     return true;
   }
 
+  int? get id => _id;
   String? get username => _username;
   String? get email => _email;
   String? get password => _password;
@@ -71,7 +72,7 @@ class User {
   String? get displayName => _displayName;
   String? get avatarURL => _avatarURL;
   String? get biography => _biography;
-
+  
   set id(int? id) {
     if (id == null) throw Exception('User ID cannot be null.');
     if (id < 0) throw Exception('User ID cannot be empty.');

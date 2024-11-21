@@ -1,5 +1,5 @@
 import 'package:sqflite/sqflite.dart';
-import 'package:text_e_role/app/domain/interface/user_idao.dart';
+import 'package:text_e_role/app/domain/idao/user_idao.dart';
 import 'package:text_e_role/app/domain/dto/user_dto.dart';
 import 'package:text_e_role/app/service/database/sqlite/connection.dart';
 
@@ -8,7 +8,7 @@ class UserDAO implements UserIDAO {
   late Database _db;
 
   final insertSQL = '''
-    INSERT INTO user(
+    INSERT INTO users(
       username,
       email,
       password,
@@ -20,7 +20,7 @@ class UserDAO implements UserIDAO {
   ''';
 
   final alterSQL = '''
-    UPDATE user SET
+    UPDATE users SET
       username = ?,
       email = ?,
       password = ?,
@@ -32,13 +32,13 @@ class UserDAO implements UserIDAO {
   ''';
 
   final deleteSQL = '''
-    UPDATE user SET status = 'I'
+    UPDATE users SET status = 'I'
     WHERE id = ?;
   ''';
 
-  final selectByIdSQL = 'SELECT * FROM user WHERE id = ?;';
+  final selectByIdSQL = 'SELECT * FROM users WHERE id = ?;';
 
-  final selectSQL = 'SELECT * FROM user;';
+  final selectSQL = 'SELECT * FROM users;';
 
   @override
   Future<UserDTO> save(UserDTO dto) async {
