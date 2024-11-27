@@ -1,18 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:text_e_role/app/presentation/widget/user_form.dart';
-import 'package:text_e_role/app/presentation/widget/user_list.dart';
-
+import 'package:text_e_role/app/presentation/view/account_creation_view.dart';
+import 'package:text_e_role/app/presentation/view/home_view.dart';
+import 'package:text_e_role/app/presentation/view/login_view.dart';
+import 'package:text_e_role/app/presentation/view/password_recovery_view.dart';
 
 class Routes {
+  static const String accountCreation = '/account_creation';
   static const String home = '/';
-  static const String userForm = '/user-form';
-  static const String userList = '/user-list';
+  static const String login = '/login';
+  static const String passwordRecovery = '/password_recovery';
 
   static Map<String, WidgetBuilder> getRoutes() {
     return {
-      home: (context) => const UserList(),
-      userForm: (context) => const UserForm(),
-      userList: (context) => const UserList()
+      accountCreation: (context) => AccountCreationView(),
+      home: (context) => HomeView(),
+      login: (context) => LoginView(),
+      passwordRecovery: (context) => PasswordRecoveryView()
     };
   }
 }
