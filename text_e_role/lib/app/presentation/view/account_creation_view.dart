@@ -4,6 +4,8 @@ import 'package:text_e_role/app/presentation/widget/form_field.dart' as form_fie
 
 
 class AccountCreationView extends StatefulWidget {
+  const AccountCreationView({super.key});
+
   @override
   _AccountCreationControllerState createState() =>
       _AccountCreationControllerState();

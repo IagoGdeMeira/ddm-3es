@@ -22,11 +22,13 @@ class FormButton extends StatelessWidget {
           color: Color.fromRGBO(245, 245, 245, 1),
           width: 2,
         ),
+        padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 24),
       ),
       onPressed: onPressed,
       child: Text(
         text,
         style: const TextStyle(
+          color: Colors.white,
           fontSize: 16,
           fontWeight: FontWeight.bold,
         ),

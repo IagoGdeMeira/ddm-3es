@@ -8,7 +8,7 @@ class HomeView extends StatelessWidget {
   @override Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home'),
+        title: const Text('Home'),
       ),
       body: Center(
         child: Column(
@@ -29,7 +29,13 @@ class HomeView extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, Routes.passwordRecovery);
               },
-              child: Text('Password Recovery'),
+              child: const Text('Password Recovery'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, Routes.unloggedLayout);
+              },
+              child: const Text('Password Recovery'),
             ),
           ],
         ),
